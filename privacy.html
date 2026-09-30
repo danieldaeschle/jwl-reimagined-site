@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz · JWL Reimagined</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="./">Start</a><a href="privacy.html">Datenschutz</a><a href="terms.html">Nutzungsbedingungen</a></nav>
+<h1>Datenschutzerklärung</h1>
+<p class="sub">Stand: 30. September 2026</p>
+
+<h2>Kurz gesagt</h2>
+<p>JWL Reimagined hat keine eigenen Server, kein Nutzerkonto, keine Werbung, kein Tracking und keine Analyse. Deine Daten bleiben auf deinen Geräten und – nur wenn du es einschaltest – in deinem eigenen Google Drive.</p>
+
+<h2>Daten auf dem Gerät</h2>
+<p>Markierungen, Notizen, Tags, Lesezeichen, Wiedergabelisten, Einstellungen und heruntergeladene Publikationen werden lokal auf dem Gerät gespeichert. Sicherungen erstellst du selbst als Datei; wohin du sie legst, entscheidest du.</p>
+
+<h2>Google Drive-Synchronisierung (optional)</h2>
+<ul>
+<li>Wenn du den Abgleich einschaltest, meldest du dich mit deinem Google-Konto an und erteilst der App die Berechtigung <code>drive.appdata</code>.</li>
+<li>Damit kann die App nur ihren eigenen, versteckten App-Ordner in deinem Drive lesen und schreiben. Deine übrigen Drive-Dateien sieht sie nicht.</li>
+<li>Gespeichert werden dort deine Studiendaten (Markierungen, Notizen, Tags, Lesezeichen, Wiedergabelisten, Einstellungen) und eine Geräteliste mit dem Namen jedes Geräts, damit der Abgleich funktioniert.</li>
+<li>Die Anmeldedaten bleiben auf dem Gerät (Android: Google Play-Dienste; Windows: verschlüsselt mit DPAPI; Linux: im Schlüsselbund oder, falls keiner verfügbar ist, in einer nur für dich lesbaren Datei). Die Daten gehen direkt zwischen deinem Gerät und Google; der Entwickler erhält sie nicht.</li>
+<li>Du kannst den Abgleich jederzeit in den Einstellungen ausschalten. Die Daten im App-Ordner löschst du unter drive.google.com → Einstellungen → Apps verwalten → JWL Reimagined → „Ausgeblendete App-Daten löschen“. Den Zugriff entziehst du unter myaccount.google.com/permissions.</li>
+</ul>
+<p>Die Nutzung von Daten aus Google-APIs entspricht der <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich der Anforderungen zur eingeschränkten Nutzung (Limited Use).</p>
+
+<h2>Downloads von Inhalten</h2>
+<p>Publikationen, Medien und Kataloge werden direkt von den öffentlichen Servern von jw.org geladen. Dabei sehen diese Server – wie bei jedem Webseitenaufruf – deine IP-Adresse und die angefragte Datei. Die App sendet dabei keine persönlichen Daten mit.</p>
+
+<h2>KI-Funktionen (optional, in Vorbereitung)</h2>
+<p>Falls du KI-Funktionen nutzt und dafür deinen eigenen API-Schlüssel hinterlegst, werden nur der jeweils gezeigte Text, seine Quellen und deine Frage an Google gesendet – nie Notizen, Markierungen oder andere persönliche Daten. Der Schlüssel bleibt verschlüsselt auf dem Gerät.</p>
+
+<h2>Weitergabe</h2>
+<p>Es werden keine Daten verkauft oder an Dritte weitergegeben. Es gibt keine Werbe- oder Analyse-SDKs.</p>
+
+<h2>Kontakt</h2>
+<p>Fragen zum Datenschutz: über <a href="https://github.com/danieldaeschle">github.com/danieldaeschle</a>.</p>
+
+<h2 id="en" lang="en">English summary</h2>
+<div lang="en">
+<p>JWL Reimagined has no servers of its own, no user accounts, no ads, no tracking and no analytics. Your study data (highlights, notes, tags, bookmarks, playlists, settings) is stored on your device.</p>
+<p>Optional Google Drive sync uses only the <code>drive.appdata</code> scope: the app can read and write its own hidden app-data folder in your Drive and nothing else. It stores your study data and a list of your device names there. Sign-in tokens stay on your device (Android: Google Play services; Windows: DPAPI-encrypted; Linux: the keyring, or a file readable only by you if no keyring is available); data travels directly between your device and Google and is never received by the developer. You can turn sync off in Settings, delete the hidden app data in Google Drive settings (Manage apps), and revoke access at myaccount.google.com/permissions.</p>
+<p>JWL Reimagined's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p>Content downloads come directly from jw.org's public servers, which see your IP address like any web request. Optional AI features (with your own API key) send only the displayed text, its sources and your question to Google. No data is sold or shared with third parties.</p>
+</div>
+</main>
+</body>
+</html>
