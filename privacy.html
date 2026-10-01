@@ -10,7 +10,7 @@
 <main>
 <nav><a href="./">Start</a><a href="privacy.html">Datenschutz</a><a href="terms.html">Nutzungsbedingungen</a></nav>
 <h1>Datenschutzerklärung</h1>
-<p class="sub">Stand: 30. September 2026</p>
+<p class="sub">Stand: 1. Oktober 2026</p>
 
 <h2>Kurz gesagt</h2>
 <p>JWL Reimagined hat keine eigenen Server, kein Nutzerkonto, keine Werbung, kein Tracking und keine Analyse. Deine Daten bleiben auf deinen Geräten und – nur wenn du es einschaltest – in deinem eigenen Google Drive.</p>
@@ -22,7 +22,7 @@
 <ul>
 <li>Wenn du den Abgleich einschaltest, meldest du dich mit deinem Google-Konto an und erteilst der App die Berechtigung <code>drive.appdata</code>.</li>
 <li>Damit kann die App nur ihren eigenen, versteckten App-Ordner in deinem Drive lesen und schreiben. Deine übrigen Drive-Dateien sieht sie nicht.</li>
-<li>Gespeichert werden dort deine Studiendaten (Markierungen, Notizen, Tags, Lesezeichen, Wiedergabelisten, Einstellungen) und eine Geräteliste mit dem Namen jedes Geräts, damit der Abgleich funktioniert.</li>
+<li>Gespeichert werden dort deine Studiendaten (Markierungen, Notizen, Tags, Lesezeichen, Wiedergabelisten, Einstellungen, KI-Vorbereitungen) und eine Geräteliste mit dem Namen jedes Geräts, damit der Abgleich funktioniert.</li>
 <li>Die Anmeldedaten bleiben auf dem Gerät (Android: Google Play-Dienste; Windows: verschlüsselt mit DPAPI; Linux: im Schlüsselbund oder, falls keiner verfügbar ist, in einer nur für dich lesbaren Datei). Die Daten gehen direkt zwischen deinem Gerät und Google; der Entwickler erhält sie nicht.</li>
 <li>Du kannst den Abgleich jederzeit in den Einstellungen ausschalten. Die Daten im App-Ordner löschst du unter drive.google.com → Einstellungen → Apps verwalten → JWL Reimagined → „Ausgeblendete App-Daten löschen“. Den Zugriff entziehst du unter myaccount.google.com/permissions.</li>
 </ul>
@@ -31,8 +31,13 @@
 <h2>Downloads von Inhalten</h2>
 <p>Publikationen, Medien und Kataloge werden direkt von den öffentlichen Servern von jw.org geladen. Dabei sehen diese Server – wie bei jedem Webseitenaufruf – deine IP-Adresse und die angefragte Datei. Die App sendet dabei keine persönlichen Daten mit.</p>
 
-<h2>KI-Funktionen (optional, in Vorbereitung)</h2>
-<p>Falls du KI-Funktionen nutzt und dafür deinen eigenen API-Schlüssel hinterlegst, werden nur der jeweils gezeigte Text, seine Quellen und deine Frage an Google gesendet – nie Notizen, Markierungen oder andere persönliche Daten. Der Schlüssel bleibt verschlüsselt auf dem Gerät.</p>
+<h2>KI-Funktionen (optional)</h2>
+<p>Die KI-Funktionen sind nur aktiv, wenn du deinen eigenen API-Schlüssel für Googles Gemini hinterlegst. Dann werden an Google gesendet:</p>
+<ul>
+<li>bei Fragen, Vorbereitung und Zusammenfassung: der jeweilige Text bzw. die Untertitel des Videos, die zugehörigen Quellen aus deinen Publikationen und deine Frage;</li>
+<li>bei der KI-Suche zusätzlich passende Stellen aus deinen heruntergeladenen Publikationen und zu deiner Frage passende eigene Notizen (Notizen mit dem Tag „KI“ werden nie gesendet).</li>
+</ul>
+<p>Markierungen, Lesezeichen und andere persönliche Daten werden nicht gesendet. Ergebnisse der KI-Vorbereitung (Unterstreichungen und ausgefüllte Antworten samt dem ursprünglichen KI-Text) werden wie deine übrigen Studiendaten auf dem Gerät gespeichert und – falls eingeschaltet – über Google Drive abgeglichen. Der Schlüssel bleibt verschlüsselt auf dem Gerät. Für die Verarbeitung bei Google gelten die Bedingungen der Gemini API für deinen Schlüssel.</p>
 
 <h2>Weitergabe</h2>
 <p>Es werden keine Daten verkauft oder an Dritte weitergegeben. Es gibt keine Werbe- oder Analyse-SDKs.</p>
@@ -43,9 +48,9 @@
 <h2 id="en" lang="en">English summary</h2>
 <div lang="en">
 <p>JWL Reimagined has no servers of its own, no user accounts, no ads, no tracking and no analytics. Your study data (highlights, notes, tags, bookmarks, playlists, settings) is stored on your device.</p>
-<p>Optional Google Drive sync uses only the <code>drive.appdata</code> scope: the app can read and write its own hidden app-data folder in your Drive and nothing else. It stores your study data and a list of your device names there. Sign-in tokens stay on your device (Android: Google Play services; Windows: DPAPI-encrypted; Linux: the keyring, or a file readable only by you if no keyring is available); data travels directly between your device and Google and is never received by the developer. You can turn sync off in Settings, delete the hidden app data in Google Drive settings (Manage apps), and revoke access at myaccount.google.com/permissions.</p>
+<p>Optional Google Drive sync uses only the <code>drive.appdata</code> scope: the app can read and write its own hidden app-data folder in your Drive and nothing else. It stores your study data (including AI preparations) and a list of your device names there. Sign-in tokens stay on your device (Android: Google Play services; Windows: DPAPI-encrypted; Linux: the keyring, or a file readable only by you if no keyring is available); data travels directly between your device and Google and is never received by the developer. You can turn sync off in Settings, delete the hidden app data in Google Drive settings (Manage apps), and revoke access at myaccount.google.com/permissions.</p>
 <p>JWL Reimagined's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-<p>Content downloads come directly from jw.org's public servers, which see your IP address like any web request. Optional AI features (with your own API key) send only the displayed text, its sources and your question to Google. No data is sold or shared with third parties.</p>
+<p>Content downloads come directly from jw.org's public servers, which see your IP address like any web request. Optional AI features (only with your own Gemini API key) send the shown text or video subtitles, their sources from your publications and your question to Google; the AI search also sends matching passages from your downloaded publications and your own notes that match the question (notes tagged “KI” are never sent). Highlights, bookmarks and other personal data are not sent. AI preparation results (underlines and filled answers with the original AI text) are stored with your study data and synced via Google Drive if you turned sync on. No data is sold or shared with third parties.</p>
 </div>
 </main>
 </body>
